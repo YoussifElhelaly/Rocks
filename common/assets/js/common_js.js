@@ -1,7 +1,39 @@
 import getProjects from './features/getProjects.js';
 import getServices from './features/getServices.js';
+let serviceContainer = document.getElementById("serviceContainer")
 
-getServices()
+
+async function showProducts() {
+    let services = await getServices()
+    .then(res => res.json())
+    console.log(serviceContainer)
+    services.data.forEach(element => {
+        serviceContainer.innerHTML += `
+        <div class="col-lg-4 mb-5 mb-lg-0">
+        <a href="#" class="service-card wow fadeInUp" data-wow-delay="0.2s">
+        <div class="icon">
+        <i class="far fa-hard-hat"></i>
+        </div>
+        
+        <div class="logo">
+            <img src="assets/img/rocks/w-a.png" data-src="assets/img/rocks/w-a.png" alt="">
+            <h5 class="fsz-24 mb-20 d-none"> Rocks Brilliance </h5>
+        </div>
+        <div class="text color-666 mb-50">
+            ${element.description}
+        </div>
+        <div class="img">
+        <img data-src="${element.image}" src="${element.image}" alt="" class="img-cover">
+        </div>
+        
+        <span class="arrow"> <i class="fas fa-arrow-right"></i> </span>
+        </a>
+        </div>
+        `
+    });
+    console.log(serviceContainer)
+}
+showProducts() 
 getProjects()
 
 $( function() {
