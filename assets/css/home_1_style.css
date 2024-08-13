@@ -260,11 +260,6 @@ body{
 }
 
 @media screen and (max-width: 991px) {
-  .tc-navbar-style1 {
-    position: relative;
-    background-color: #333;
-  }
-
   .tc-navbar-style1 .content {
     border: 0;
     justify-content: center;
@@ -272,6 +267,9 @@ body{
 
   .tc-navbar-style1 .content .navbar-nav {
     margin: 20px 0;
+  }
+  .tc-navbar-style1 .content img {
+    width: 150px;
   }
 
   .tc-navbar-style1 .content .navbar-nav .nav-link {
@@ -386,6 +384,10 @@ body{
 }
 
 @media screen and (max-width: 991px) {
+  .tc-header-style1 {
+    padding-top: 100px;
+    background-color: white;
+  }
   .tc-header-style1 .slider-card .img {
     height: 250px;
     min-height: 70vh;
@@ -613,8 +615,7 @@ body{
 
 @media screen and (max-width: 991px) {
   .tc-services-style1 .service-card {
-    border: 0;
-    padding: 0;
+    padding: 10px;
     margin-top: 20px !important;
   }
 }
@@ -1627,6 +1628,36 @@ html[lang="ar"] .home-style1 .loader-wrap {
 .flip-percent {
   margin-left: 5px;
   transition: 0.5s all ease;
+}
+
+
+.service-card .img img {
+  transition: 0.3s all ;
+}
+
+.service-card:hover .img img {
+  transform: scale(1.2);
+}
+
+.service-card:hover .arrow i{
+  animation: arrow 1s ease  infinite ;
+}
+
+.tc-blog-style1 .blog-card .img img{
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.tc-blog-style1 .blog-card:hover .img img{
+  transform: scale(1);
+}
+
+@keyframes arrow {
+    0% {
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(20px); 
+    }
 }
 
 @keyframes flip {

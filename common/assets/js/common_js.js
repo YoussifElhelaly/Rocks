@@ -1,3 +1,9 @@
+import getProjects from './features/getProjects.js';
+import getServices from './features/getServices.js';
+
+getServices()
+getProjects()
+
 $( function() {
 
     var wind = $(window);
@@ -163,7 +169,3 @@ $(window).on("load", function () {
     }, 1500);
 
 });
-
-
-
-
