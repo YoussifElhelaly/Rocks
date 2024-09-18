@@ -2548,6 +2548,9 @@
 .inner-pages-style1 .tc-inner-header-style1 {
   background: url("../../../assets/img/blog/blog1.jpg");
   position: relative;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
   padding-bottom: 40px; }
   .inner-pages-style1 .tc-inner-header-style1 h1 {
     font-size: 250px;

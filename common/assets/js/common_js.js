@@ -27,7 +27,7 @@ async function showProducts() {
         <img data-src="${element.image}" src="${element.image}" alt="" class="img-cover">
         </div>
         
-        <span class="arrow"> <i class="fas fa-arrow-right"></i> </span>
+        <span class="arrow"> See More </span>
         </a>
         </div>
         `

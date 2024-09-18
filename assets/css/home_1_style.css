@@ -140,6 +140,8 @@ body{
   font-weight: 400;
   margin: 10px 0;
   text-transform: uppercase;
+  font-family: sansation !important;
+
   font-weight: 700;
   color: #000;
 }

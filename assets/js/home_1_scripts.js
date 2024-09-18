@@ -27,7 +27,6 @@ $(document).ready(function () {
             nextEl: ".header-slider .swiper-button-next",
             prevEl: ".header-slider .swiper-button-prev",
         },
-        mousewheel: false,
         keyboard: true,
         autoplay: {
             delay: 6000,
@@ -64,7 +63,6 @@ $(document).ready(function () {
             nextEl: ".tc-clients-style1 .swiper-button-next",
             prevEl: ".tc-clients-style1 .swiper-button-prev",
         },
-        mousewheel: false,
         keyboard: true,
         autoplay: {
             delay: 6000,
@@ -80,7 +78,6 @@ $(document).ready(function () {
         speed: 1000,
         pagination: false,
         navigation: false,
-        mousewheel: false,
         keyboard: true,
         loop: false,
         autoplay: false,
@@ -129,7 +126,6 @@ $(document).ready(function () {
             nextEl: '.tc-blog-style1 .swiper-button-next',
             prevEl: '.tc-blog-style1 .swiper-button-prev',
         },
-        mousewheel: false,
         keyboard: true,
         loop: false,
         autoplay: {
