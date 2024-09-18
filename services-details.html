@@ -48,7 +48,7 @@
 
     <!-- ====== Start Loading ====== -->
 
-    <div class="loader-wrap">
+    <!-- <div class="loader-wrap">
         <div class="loader">
             <div class="loader-inner">
                 <div class="nanometrical">
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--  start side_menu  -->
     <div class="side_menu4_overlay"></div>
@@ -129,8 +129,8 @@
             <div class="container">
                 <div class="info col-lg-7">
                     <h1 class="js-title"> BIM Engineering </h1>
-                    <!-- <div class="text fsz-18 text-white"> Architecture is a visual art, and the building <br> speak for
-                        themselves </div> -->
+                    <div class="text fsz-18 text-white"> Architecture is a visual art, and the building <br> speak for
+                        themselves </div>
                 </div>
             </div>
         </header>
@@ -144,7 +144,7 @@
               <!--  Start main-slider  -->
               <section class="tc-main-img-style1 header">
                 <div class="main-img">
-                    <img data-src="./innerpages/assets/img/1.jpg" alt="" class="img-cover" data-speed="1.25">
+                    <img id="coverPhotoDetails" data-src="./innerpages/assets/img/1.jpg" alt="" class="img-cover" data-speed="1.25">
                 </div>
                 <div class="content">
                     <div class="container">
@@ -373,41 +373,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 offset-lg-2">
-                            <div class="branch-card">
-                                <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> Boston, MA </h5>
-                                <ul class="footer-links">
-                                    <li> <a href="#"> Room 505, 49 Brimmer st, Boston, MA 02108 </a> </li>
-                                    <li> <a href="#"> contact@rocks.com </a> </li>
-                                    <li> <a href="#"> (054) 3256 78 87 </a> </li>
-                                </ul>
-                            </div>
-                            <div class="branch-card">
-                                <h5 class="mb-20 mt-5 fw-600"> Boston, MA </h5>
-                                <ul class="footer-links">
-                                    <li> <a href="#"> 3D Visualization Architect </a> </li>
-                                    <li> <a href="#"> Interior Architect </a> </li>
-                                    <li> <a href="#"> Sustainable Design Architect </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="branch-card">
-                                <h5 class="mb-20 mt-5 mt-lg-0 fw-600"> Portland, OR </h5>
-                                <ul class="footer-links">
-                                    <li> <a href="#"> 2221 Sw Broadway Dr, Portland, OR 97201 </a> </li>
-                                    <li> <a href="#"> contact@rocks.com </a> </li>
-                                    <li> <a href="#"> (021) 4246 63 68 </a> </li>
-                                </ul>
-                            </div>
-                            <div class="branch-card">
-                                <h5 class="mb-20 mt-5 fw-600"> Helps </h5>
-                                <ul class="footer-links">
-                                    <li> <a href="#"> Term & Conditions </a> </li>
-                                    <li> <a href="#"> Partner Policy </a> </li>
-                                </ul>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="foot">
@@ -455,7 +421,8 @@
     <script src="./common/assets/js/gsap_lib/ScrollTrigger.min.js"></script>
     <script src="./common/assets/js/gsap_lib/SplitText.min.js"></script>
     <!-- === common === -->
-    <script src="./common/assets/js/common_js.js"></script>
+    <script type="module" src="./common/assets/js/common_js.js"></script>
+    <script type="module" src="./common/assets/js/services_details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/compressorjs/dist/compressor.min.js"></script>
 
     <!-- ===== home scripts ===== -->

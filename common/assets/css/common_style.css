@@ -93,14 +93,14 @@ select:focus, input:focus { box-shadow: none !important; }
   100% { transform: rotate(360deg); }
 }
 .slide-up-down { animation: 1.7s ease-in-out 0s infinite alternate both running slide_up_down; }
-@-webkit-keyframes slide_up_down { 
+/* @-webkit-keyframes slide_up_down { 
   0% { transform: translateY(0px); }
   100% { transform: translateY(-20px); }
-}
-@keyframes slide_up_down { 
+} */
+/* @keyframes slide_up_down { 
   0% { transform: translateY(0px); }
   100% { transform: translateY(-20px); }
-}
+} */
 .left_to_right_apperance { transform: scale(1.2); transition: all 0.8s ease-in-out 0.4s; clip-path: polygon(0px 0px, 0px 0px, 0px 100%, 0% 100%); }
 .left_to_right_apperance.no_scale { transform: scale(1); }
 .left_to_right_apperance.animated { transform: scale(1); clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%); }

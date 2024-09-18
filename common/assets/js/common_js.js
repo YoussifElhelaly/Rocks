@@ -1,6 +1,7 @@
 import getProjects from './features/getProjects.js';
 import getServices from './features/getServices.js';
 let serviceContainer = document.getElementById("serviceContainer")
+let projectsContainer = document.getElementById("projectsContainer")
 
 
 async function showProducts() {
@@ -33,8 +34,36 @@ async function showProducts() {
     });
     console.log(serviceContainer)
 }
+async function showProjects() {
+    let services = await getProjects()
+    .then(res => res.json())
+    services.data.forEach(element => {
+        console.log(element)
+        let date = element.date.split(" ")
+        projectsContainer.innerHTML += `
+       <div class="swiper-slide">
+            <div class="blog-card">
+                <div class="img">
+                    <img data-src="${element.image}" src="${element.image}" class="img-cover">
+                </div>
+                <div class="info">
+                    <div class="date">
+                        <div class="num fsz-45 mb-2"> ${date[0]} </div>
+                        <small class="fsz-12 text-uppercase color-666"> ${date[1]} <br> ${date[2]} </small>
+                    </div>
+                    <div class="cont">
+                        <a href="#" class="title d-block fsz-20 hover-orange1 mb-15 fw-600"> ${element.title} </a>
+                        <small class="fsz-12 color-orange1"> ${element.tag} </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `
+    });
+    console.log(serviceContainer)
+}
 showProducts() 
-getProjects()
+showProjects()
 
 $( function() {
 
